@@ -1,22 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card'
+import Titulo from './components/Titulo'
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Titulo text="Meu primeiro projeto React do zero" />
+        <h3>Um pouco sobre as pancs 🌱</h3>
+        <p> Plantas Alimentícias Não Convencionais (conhecidas como PANCs são plantas comestíveis que surgem de forma espontânea em quintais, terrenos baldios e canteiros, mas que não são consumidas por falta de costume ou de conhecimento. Conheça alguns tipos e se abra às possibilidades ✨</p>
+        <Card/>
       </header>
     </div>
   );
